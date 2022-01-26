@@ -1,0 +1,143 @@
+
+/* request format and detais */
+
+.mission-request-container {
+    position: relative;
+   /* color: black; */
+   font-weight: 500;
+   font-size: 16px;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   background: white;
+   color: black;
+   padding: 20px;
+  }
+
+  .mission-request-container .mission-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .mission-request-container  .mission-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mission-title .mission-id{
+    display: flex;
+  }
+  .mission-entry-row{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 10px auto;
+  }
+
+  .mission-entry-row .number{
+    display: flex;
+    margin: 6px;
+    color: black;
+  }
+
+  .mission-entry-row .entry{
+    display: flex;
+    align-items: center;
+  }
+
+  .mission-entry-row .entry-label{
+    padding: 10px;
+  }
+
+  .mission-destination-part{
+    position: relativ;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 40px;
+  }
+
+  .has-InputRadio span label{
+    margin-left: 8px;
+    text-transform: capitalize
+  }
+
+  .entry-label-2{
+      margin-left: 3px;
+  }
+
+
+
+
+  /* user profile details */
+
+  #sig-canvas {
+    border: 2px dotted #CCCCCC;
+    border-radius: 15px;
+    cursor: crosshair;
+  }
+
+
+  /* image uploader */
+
+  .avatar-wrapper{
+      position: relative;
+      height: 200px;
+      width: 200px;
+      margin: 50px auto;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 1px 1px 15px -5px black;
+      transition: all .3s ease;
+  }
+
+    .avatar-wrapper:hover{
+          transform: scale(1.05);
+          cursor: pointer;
+    }
+
+  .profile-pic {
+      height: 100%;
+          width: 100%;
+          transition: all .3s ease;
+      }
+  .profile-pic::after{
+      font-family: FontAwesome;
+              content: "\f007";
+              top: 0; left: 0;
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              font-size: 190px;
+              background: #ecf0f1;
+              color: #34495e;
+              text-align: center;
+
+  }
+
+     .avatar-wrapper .profile-pic{
+               opacity: .5;
+     }
+
+      .upload-button {
+          position: absolute;
+          top: 0; left: 0;
+          height: 100%;
+          width: 100%;
+    }
+
+  .upload-button 	.fa-arrow-circle-up{
+      position: absolute;
+              font-size: 234px;
+              top: -17px;
+              left: 0;
+              text-align: center;
+              opacity: 0;
+              transition: all .3s ease;
+              color: #34495e;
+  }
+
+      .upload-button:hover .fa-arrow-circle-up{
+              opacity: .9;
+          }
+
